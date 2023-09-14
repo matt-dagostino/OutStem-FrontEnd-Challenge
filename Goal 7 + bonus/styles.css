@@ -25,7 +25,6 @@
     }
 }
 
-/* Add custom animations and cute styles */
 @keyframes bounceIn {
     0% {
         transform: scale(0.1);
@@ -65,11 +64,4 @@
     100% {
         transform: scale(1);
     }
-}
-
-/* Add cute styles for the trophy image */
-.cute-trophy {
-    width: 100px;
-    height: auto;
-    margin-top: 20px;
 }

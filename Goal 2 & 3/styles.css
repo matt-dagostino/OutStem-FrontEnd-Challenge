@@ -33,7 +33,6 @@ h1 {
     text-align: center;
 }
 
-/* Add this to your CSS file to style the notification */
 #notification {
     position: fixed;
     top: 50%;
