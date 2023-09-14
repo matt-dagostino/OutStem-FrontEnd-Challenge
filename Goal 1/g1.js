@@ -1,20 +1,20 @@
 // Define the API URL
-const apiUrl = 'https://opentdb.com/api.php';
+const API = "https://opentdb.com/api.php";
 
 // Specify the parameters for the API request
-const amount = 1; // Number of questions to fetch (in this case, just 1)
-const difficulty = 'easy'; // Difficulty level
-const category = 9; // Category ID for General Knowledge
-const type = 'boolean'; // Type of question (true/false)
+const amount = 1; // Number of questions to fetch
+const difficulty = "easy"; // Difficulty level
+const category = 9; // Category ID for General Knowledge Questions
+const type = "boolean"; // Type of question (true/false)
 
 // Construct the URL for the API request
-const url = `${apiUrl}?amount=${amount}&difficulty=${difficulty}&category=${category}&type=${type}`;
+const apiURL = `${API}?amount=${amount}&difficulty=${difficulty}&category=${category}&type=${type}`;
 
-// Make the API request using the fetch function
-fetch(url)
+// Make the API request
+fetch(apiURL)
   .then((response) => {
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error("Network response was not ok");
     }
     return response.json();
   })
@@ -24,9 +24,9 @@ fetch(url)
     const correctAnswer = data.results[0].correct_answer;
 
     // Print the question and correct answer to the console
-    console.log('Question:', question);
-    console.log('Correct Answer:', correctAnswer);
+    console.log("Question:", question);
+    console.log("Correct Answer:", correctAnswer);
   })
   .catch((error) => {
-    console.error('Error:', error);
+    console.error("Error:", error);
   });

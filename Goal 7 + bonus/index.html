@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Add a custom CSS file for animations -->
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card animated bounceInDown"> <!-- Use "animated" class for animation -->
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Trivia Game</h2>
+                        <form id="start-form">
+                            <div class="form-group">
+                                <label for="category">Select Category:</label>
+                                <select class="form-control" id="category">
+                                    <option value="9">General Knowledge</option>
+                                    <option value="21">Sports</option>
+                                    <option value="25">Arts</option>
+                                    <option value="28">Vehicles</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="difficulty">Select Difficulty:</label>
+                                <select class="form-control" id="difficulty">
+                                    <option value="easy">Easy</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="hard">Hard</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block animated pulse"> <!-- Use "animated" class for button animation -->
+                                Start Game
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

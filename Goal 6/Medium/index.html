@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Trivia Game!</h1>
+        <div id="question-counter">
+            Question <span id="current-question">1</span> of <span id="total-questions">10</span>
+        </div>
+
+        <div id="notification" class="hidden">
+            <div id="notification-content">
+                <p id="notification-message"></p>
+                <button id="notification-button">OK</button>
+            </div>
+        </div>
+        
+        <div id="question-container">
+            <p id="question"></p>
+
+        </div>
+
+        <div id="options-container">
+            <div>
+                <input type="radio" name="answer" id="option-a">
+                <label for="option-a" id="label-a"></label>
+            </div>
+            <div>
+                <input type="radio" name="answer" id="option-b">
+                <label for="option-b" id="label-b"></label>
+            </div>
+            <div>
+                <input type="radio" name="answer" id="option-c">
+                <label for="option-c" id="label-c"></label>
+            </div>
+            <div>
+                <input type="radio" name="answer" id="option-d">
+                <label for="option-d" id="label-d"></label>
+            </div>
+        </div>
+        <button id="next-button">Next Question</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
